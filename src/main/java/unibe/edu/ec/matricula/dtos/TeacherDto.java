@@ -7,11 +7,11 @@ import java.util.Date;
 public class TeacherDto {
     private String id;
 
-    private String name,address, phoneNumber,email,degreeType;
+    private String name, address, phoneNumber, email, degreeType;
 
     private Date birthDate;
 
-    public TeacherDto(){
+    public TeacherDto() {
 
     }
 
@@ -24,14 +24,15 @@ public class TeacherDto {
         this.degreeType = degreeType;
         this.birthDate = birthDate;
     }
-    public TeacherDto(Teacher teacher){
-        this.id=teacher.getId();
-        this.name=teacher.getName();
-        this.address=teacher.getAddress();
-        this.phoneNumber=teacher.getPhoneNumber();
-        this.email=teacher.getEmail();
-        this.degreeType=teacher.getDegreeType();
-        this.birthDate=teacher.getBirthDate();
+
+    public TeacherDto(Teacher teacher) {
+        this.id = teacher.getId();
+        this.name = teacher.getName();
+        this.address = teacher.getAddress();
+        this.phoneNumber = teacher.getPhoneNumber();
+        this.email = teacher.getEmail();
+        this.degreeType = teacher.getDegreeType();
+        this.birthDate = teacher.getBirthDate();
     }
 
     public String getId() {

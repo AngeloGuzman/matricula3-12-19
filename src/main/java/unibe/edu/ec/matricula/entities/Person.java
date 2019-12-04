@@ -10,11 +10,11 @@ public abstract class Person {
     @Id
     private String id;
 
-    private String name,address, phoneNumber,email;
+    private String name, address, phoneNumber, email;
 
     private Date birthDate;
 
-    public Person(){
+    public Person() {
 
     }
 

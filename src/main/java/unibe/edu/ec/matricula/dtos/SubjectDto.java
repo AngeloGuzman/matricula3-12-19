@@ -8,10 +8,10 @@ public class SubjectDto {
 
     private String name;
 
-    private int credits,semester;
+    private int credits, semester;
     private CollegeCarrerDto collegeCarrerDto;
 
-    public SubjectDto(){
+    public SubjectDto() {
 
     }
 
@@ -22,12 +22,13 @@ public class SubjectDto {
         this.semester = semester;
         this.collegeCarrerDto = collegeCarrerDto;
     }
-    public SubjectDto(Subject subject){
-        this.id=subject.getId();
-        this.name=subject.getName();
-        this.semester=subject.getSemester();
-        this.credits=subject.getCredits();
-        this.collegeCarrerDto=new CollegeCarrerDto(subject.getCollegeCarrer());
+
+    public SubjectDto(Subject subject) {
+        this.id = subject.getId();
+        this.name = subject.getName();
+        this.semester = subject.getSemester();
+        this.credits = subject.getCredits();
+        this.collegeCarrerDto = new CollegeCarrerDto(subject.getCollegeCarrer());
 
 
     }

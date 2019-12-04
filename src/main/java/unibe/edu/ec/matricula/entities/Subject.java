@@ -11,12 +11,13 @@ public class Subject {
 
     private String name;
 
-    private int credits,semester;
+    private int credits, semester;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private CollegeCarrer collegeCarrer;
 
-    public Subject(){}
+    public Subject() {
+    }
 
 
     public Subject(int id, String name, int credits, int semester, CollegeCarrer collegeCarrer) {

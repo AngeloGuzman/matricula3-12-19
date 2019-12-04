@@ -16,7 +16,7 @@ public class CollegeCarrerDto {
 
     private List<StudentsDto> studentsDtos;
 
-    public CollegeCarrerDto(){
+    public CollegeCarrerDto() {
 
     }
 
@@ -28,13 +28,14 @@ public class CollegeCarrerDto {
         this.studentsDtos = studentsDtos;
 
     }
-    public CollegeCarrerDto(CollegeCarrer collegeCarrer){
-        this.id=collegeCarrer.getId();
-        this.name=collegeCarrer.getName();
-        this.semester=collegeCarrer.getSemester();
-        this.decade=new TeacherDto(collegeCarrer.getDecade());
 
-        for (Student student: collegeCarrer.getStudents()){
+    public CollegeCarrerDto(CollegeCarrer collegeCarrer) {
+        this.id = collegeCarrer.getId();
+        this.name = collegeCarrer.getName();
+        this.semester = collegeCarrer.getSemester();
+        this.decade = new TeacherDto(collegeCarrer.getDecade());
+
+        for (Student student : collegeCarrer.getStudents()) {
             StudentsDto studentsDto = new StudentsDto(student);
             this.studentsDtos.add(studentsDto);
 
